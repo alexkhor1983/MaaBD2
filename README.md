@@ -61,8 +61,8 @@
 
 感谢以下开发者对本作出的贡献:
 
-<a href="https://github.com//JZPPP/MaaBD2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=/JZPPP/MaaBD2" />
+<a href="https://github.com/JZPPP/MaaBD2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=/JZPPP/MaaBD2&max=100" />
 </a>
 
 ![Visitor Count](https://profile-counter.glitch.me/JZPPP/count.svg)
