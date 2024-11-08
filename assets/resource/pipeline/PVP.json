@@ -1,0 +1,325 @@
+{
+    "PVP_HomePage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "PVP_PVPStart",
+            "StartGame_BackHomePage"
+        ]
+    },
+    "PVP_BackHomePage": {
+        "doc": "找到图钉-点击返回主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "action": "Click",
+        "target": [
+            1186,
+            46,
+            0,
+            0
+        ],
+        "next": [
+            "PVP_PVPBook",
+            "Banner"
+        ]
+    },
+    "PVP_Banner": {
+        "doc": "商城推广礼包，点击关闭",
+        "recognition": "OCR",
+        "roi": [
+            916,
+            102,
+            143,
+            38
+        ],
+        "expected": "7天内不再显示",
+        "action": "Click",
+        "target": [
+            1130,
+            500,
+            0,
+            0
+        ],
+        "next": [
+            "PVP_PVPBook"
+        ]
+    },
+    "PVP_Banner2": {
+        "doc": "公告弹窗",
+        "recognition": "TemplateMatch",
+        "roi": [
+            625,
+            107,
+            28,
+            34
+        ],
+        "template": [
+            "banner2.png"
+        ],
+        "action": "Click",
+        "target": [
+            1130,
+            500,
+            0,
+            0
+        ],
+        "next": [
+            "PVP_PVPBook"
+        ]
+    },
+    "PVP_HomePage2": {
+        "doc": "识别左下抽抽乐-主页-点击选择章节",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            1111,
+            650,
+            0,
+            0
+        ],
+        "next": [
+            "PVP_PVPBook"
+        ]
+    },
+    "PVP_PVPBook": {
+        "doc": "点击PVP本子",
+        "recognition": "TemplateMatch",
+        "roi": [
+            187,
+            611,
+            62,
+            34
+        ],
+        "template": "pvp.png",
+        "action": "Click",
+        "next": [
+            "PVP_PVPStart",
+            "PVP_PVPMes"
+        ]
+    },
+    "PVP_PVPMes": {
+        "doc": "升降级点击确认",
+        "recognition": "OCR",
+        "roi": [
+            614,
+            642,
+            49,
+            35
+        ],
+        "expected": "确认",
+        "action": "Click",
+        "next": [
+            "PVP_PVPStart"
+        ]
+    },
+    "PVP_PVPStart": {
+        "doc": "进入PVP舞台",
+        "recognition": "TemplateMatch",
+        "recommended": [
+            487,
+            462,
+            86,
+            29
+        ],
+        "template": "PVPstage.png",
+        "action": "Click",
+        "target": [
+            529,
+            414,
+            0,
+            0
+        ],
+        "next": [
+            "PVP_AutoBattle"
+        ]
+    },
+    "PVP_AutoBattle": {
+        "doc": "点击自动战斗",
+        "recognition": "OCR",
+        "roi": [
+            917,
+            658,
+            85,
+            33
+        ],
+        "expected": "自动战斗",
+        "action": "Click",
+        "target": [
+            960,
+            640,
+            0,
+            0
+        ],
+        "post_delay": 1000,
+        "next": [
+            "PVP_AutoBattleButton",
+            "PVP_AutoBattleButton2",
+            "PVP_AutoBattleMAX"
+        ]
+    },
+    "PVP_AutoBattleButton": {
+        "doc": "点击按钮开关1",
+        "recognition": "TemplateMatch",
+        "roi": [
+            893,
+            249,
+            30,
+            26
+        ],
+        "template": "button.png",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "PVP_AutoBattleMAX"
+        ]
+    },
+    "PVP_AutoBattleButton2": {
+        "doc": "点击按钮开关2",
+        "recognition": "TemplateMatch",
+        "roi": [
+            887,
+            322,
+            37,
+            37
+        ],
+        "template": "button.png",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "PVP_AutoBattleMAX"
+        ]
+    },
+    "PVP_AutoBattleMAX": {
+        "doc": "点击MAX",
+        "recognition": "OCR",
+        "roi": [
+            826,
+            421,
+            70,
+            34
+        ],
+        "expected": "MAX",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "PVP_AutoBattleStart"
+        ]
+    },
+    "PVP_AutoBattleStart": {
+        "doc": "点击战斗开始",
+        "recognition": "OCR",
+        "roi": [
+            646,
+            558,
+            83,
+            34
+        ],
+        "expected": "战斗开始",
+        "action": "Click",
+        "post_delay": 10000,
+        "next": [
+            "PVP_AutoBattle2"
+        ]
+    },
+    "PVP_AutoBattle2": {
+        "doc": "识别战斗中",
+        "recognition": "OCR",
+        "roi": [
+            646,
+            558,
+            83,
+            34
+        ],
+        "expected": "正在进行",
+        "post_delay": 100000,
+        "next": [
+            "PVP_BattleLeave"
+        ]
+    },
+    "PVP_Battle": {
+        "doc": "识别Battle____废弃",
+        "recognition": "OCR",
+        "roi": [
+            1109,
+            625,
+            83,
+            37
+        ],
+        "expected": "BATTLE",
+        "action": "Click",
+        "post_delay": 10000,
+        "next": [
+            "PVP_BattleLeave"
+        ]
+    },
+    "PVP_BattleLeave": {
+        "doc": "识别离开",
+        "recognition": "OCR",
+        "roi": [
+            1092,
+            653,
+            50,
+            34
+        ],
+        "expected": "离开",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "PVP_PVPMes",
+            "StartGame_HomePageFin"
+        ]
+    },
+    "PVP_PVPMes2": {
+        "doc": "升降级点击确认",
+        "recognition": "OCR",
+        "roi": [
+            614,
+            642,
+            49,
+            35
+        ],
+        "expected": "确认",
+        "action": "Click",
+        "next": [
+            "StartGame_HomePageFin"
+        ]
+    },
+    "PVP_HomePageFin": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": []
+    }
+}

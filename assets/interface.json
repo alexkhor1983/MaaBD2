@@ -30,18 +30,18 @@
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "开始游戏",
+            "entry": "开始游戏"
         },
         {
-            "name": "选项任务",
+            "name": "选项任务2",
             "entry": "MyTask2",
             "option": [
                 "任务选项1"
             ]
         },
         {
-            "name": "参数任务",
+            "name": "参数任务3",
             "entry": "MyTask3",
             "option": [
                 "任务选项1"

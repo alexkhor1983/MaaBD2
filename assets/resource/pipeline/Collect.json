@@ -1,0 +1,246 @@
+{
+    "Collect_StartGame_HomePage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "Collect_HomePage",
+            "Collect_BackPVEPage"
+        ]
+    },
+    "Collect_HomePage": {
+        "doc": "PVE图",
+        "recognition": "TemplateMatch",
+        "roi": [
+            983,
+            112,
+            22,
+            22
+        ],
+        "template": "todaytask.png",
+        "post_delay": 5000,
+        "next": [
+            "Collect_Skill1"
+        ]
+    },
+    "Collect_Skill1": {
+        "doc": "PVE点击技能1",
+        "recognition": "TemplateMatch",
+        "roi": [
+            983,
+            112,
+            22,
+            22
+        ],
+        "template": "todaytask.png",
+        "action": "Click",
+        "post_delay": 5000,
+        "target": [
+            1012,
+            648,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_Skill2"
+        ]
+    },
+    "Collect_Skill2": {
+        "doc": "PVE点击技能2",
+        "recognition": "TemplateMatch",
+        "roi": [
+            983,
+            112,
+            22,
+            22
+        ],
+        "template": "todaytask.png",
+        "action": "Click",
+        "post_delay": 5000,
+        "target": [
+            980,
+            560,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_Skill3"
+        ]
+    },
+    "Collect_Skill3": {
+        "doc": "PVE点击技能3",
+        "recognition": "TemplateMatch",
+        "roi": [
+            983,
+            112,
+            22,
+            22
+        ],
+        "template": "todaytask.png",
+        "action": "Click",
+        "post_delay": 5000,
+        "target": [
+            1010,
+            480,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_HomePageFin"
+        ]
+    },
+    "Collect_BackPVEPage": {
+        "doc": "找到图钉-点击返回主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "action": "Click",
+        "target": [
+            1186,
+            46,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_HomePage2",
+            "Collect_Banner"
+        ]
+    },
+    "Collect_Banner": {
+        "doc": "商城推广礼包，点击关闭",
+        "recognition": "OCR",
+        "roi": [
+            916,
+            102,
+            143,
+            38
+        ],
+        "expected": "7天内不再显示",
+        "action": "Click",
+        "target": [
+            1130,
+            500,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_Banner2",
+            "Collect_HomePage2"
+        ]
+    },
+    "Collect_Banner2": {
+        "doc": "公告弹窗",
+        "recognition": "TemplateMatch",
+        "roi": [
+            625,
+            107,
+            28,
+            34
+        ],
+        "template": [
+            "banner2.png"
+        ],
+        "action": "Click",
+        "target": [
+            1130,
+            500,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_HomePage2"
+        ]
+    },
+    "Collect_HomePage2": {
+        "doc": "识别左下抽抽乐-主页-点击选择章节",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            1111,
+            650,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_PVEBookSwipe"
+        ]
+    },
+    "Collect_PVEBookSwipe": {
+        "doc": "识别活动游戏卡-上划",
+        "recognition": "OCR",
+        "roi": [
+            118,
+            505,
+            95,
+            42
+        ],
+        "expected": "活动游戏卡",
+        "action": "Swipe",
+        "begin": [
+            1400,
+            300,
+            0,
+            0
+        ],
+        "end": [
+            1400,
+            700,
+            0,
+            0
+        ],
+        "next": [
+            "Collect_TouchPVEBook"
+        ]
+    },
+    "Collect_TouchPVEBook": {
+        "doc": "点击PVE本子2",
+        "recognition": "TemplateMatch",
+        "roi": [
+            405,
+            157,
+            78,
+            38
+        ],
+        "template": "pve2.png",
+        "action": "Click",
+        "next": [
+            "Collect_StartGame_HomePage"
+        ]
+    },
+    "Collect_HomePageFin": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": []
+    }
+}

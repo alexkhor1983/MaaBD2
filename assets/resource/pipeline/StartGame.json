@@ -1,0 +1,105 @@
+{
+    "StartGame_Start": {
+        "doc": "启动游戏",
+        "action": "StartApp",
+        "package": "com.neowizgames.game.browndust2",
+        "post_delay": 2000,
+        "next": [
+            "StartGame_Logo"
+        ]
+    },
+    "StartGame_Logo": {
+        "recognition": "OCR",
+        "roi" : [530,326,159,64],
+        "expected": "NEO",
+        "post_delay": 3000,
+        "next": [
+            "StartGame_TouchStart",
+            "StartGame_PayFaild"
+        ]
+    },
+    "StartGame_LoadingPage": {
+        "recognition": "OCR",
+        "roi": [
+            792,
+            274,
+            124,
+            38
+        ],
+        "expected": "棕色尘埃2",
+        "post_delay": 3000,
+        "next": [
+            "StartGame_TouchStart",
+            "StartGame_PayFaild"
+        ]
+    },
+    "StartGame_PayFaild": {
+        "doc": "支付方式失败点击确认",
+        "recognition": "OCR",
+        "roi": [
+            578,
+            262,
+            124,
+            51
+        ],
+        "expected": "支付失败",
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "StartGame_HomePage"
+        ]
+    },
+    "StartGame_TouchStart": {
+        "doc": "点击进入",
+        "recognition": "OCR",
+        "roi": [
+            823,
+            461,
+            126,
+            58
+        ],
+        "expected": "TOUCH",
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "StartGame_HomePage"
+        ]
+    },
+    "StartGame_HomePage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "StartGame_returnToHomePage"
+        ]
+    },
+    "StartGame_HomePage2": {
+        "doc": "识别左下抽抽乐-主页",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            1111,
+            650,
+            0,
+            0
+        ],
+        "next": [
+            "StartGame_HomePage"
+        ]
+    }
+}
