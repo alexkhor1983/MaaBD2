@@ -25,20 +25,20 @@
 
  
 
-## 已有功能
+## 开发中的功能
 
-* [x] 启动游戏
+* [] 启动游戏
 
-* [x] 日常任务
-  * [x] 扫荡
-  * [x] PVP
-  * [x] 采集
-  * [x] 白嫖抽卡
-  * [x] 领取日常任务奖励
+* [] 日常任务
+  * [] 扫荡
+  * [] PVP
+  * [] 采集
+  * [] 白嫖抽卡
+  * [] 领取日常任务奖励
 
-* [x] 活动图
-  * [x] 普通关卡推图+扫荡
-  * [x] 小游戏扫荡
+* [] 活动图
+  * [] 普通关卡推图+扫荡
+  * [] 小游戏扫荡
 
 ### 致谢
 
@@ -64,4 +64,5 @@
 <a href="https://github.com//JZPPP/MaaBD2/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=/JZPPP/MaaBD2" />
 </a>
+
 ![Visitor Count](https://profile-counter.glitch.me/JZPPP/count.svg)
