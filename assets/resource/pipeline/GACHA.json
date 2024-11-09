@@ -100,7 +100,8 @@
         ],
         "expected": "查看概率",
         "next": [
-            "Gacha_FindFreeGacha"
+            "Gacha_FindFreeGacha",
+            "Gacha_FinGacha"
         ]
     },
     "Gacha_FindFreeGacha": {
@@ -109,15 +110,21 @@
         "roi": [
             265,
             144,
-            295,
-            515
+            60,
+            300
         ],
         "template": "FreeGacha.png",
+        "threshold": 0.9,
         "action": "Click",
+        "target_offset": [
+            -50,
+            50,
+            0,
+            0
+        ],
         "next": [
             "Gacha_TouchGacha",
-            "Gacha_FindFreeGacha",
-            "Gacha_FinGacha"
+            "Gacha_FindFreeGacha"
         ]
     },
     "Gacha_TouchGacha": {
@@ -140,19 +147,27 @@
         "recognition": "OCR",
         "roi": [
             596,
-            371,
-            88,
-            36
+            352,
+            90,
+            106
         ],
         "expected": "免费1次",
+        "next": [
+            "Gacha_TouchGachaConfirm2"
+        ]
+    },
+    "Gacha_TouchGachaConfirm2": {
+        "doc": "确认抽卡",
+        "recognition": "OCR",
+        "roi": [
+            673,
+            403,
+            70,
+            127
+        ],
+        "expected": "购买",
         "action": "Click",
         "post_delay": 10000,
-        "target": [
-            700,
-            450,
-            0,
-            0
-        ],
         "next": [
             "Gacha_GachaResultBack"
         ]
@@ -170,8 +185,8 @@
         "action": "Click",
         "post_delay": 1000,
         "target": [
-            135,
-            400,
+            142,
+            45,
             0,
             0
         ],
@@ -193,7 +208,7 @@
         "post_delay": 1000,
         "target": [
             135,
-            400,
+            40,
             0,
             0
         ]
