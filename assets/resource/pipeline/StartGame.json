@@ -3,16 +3,21 @@
         "doc": "启动游戏",
         "action": "StartApp",
         "package": "com.neowizgames.game.browndust2",
-        "post_delay": 2000,
+        "post_delay": 3000,
         "next": [
             "StartGame_Logo"
         ]
     },
     "StartGame_Logo": {
         "recognition": "OCR",
-        "roi" : [530,326,159,64],
+        "roi": [
+            530,
+            326,
+            159,
+            64
+        ],
         "expected": "NEO",
-        "post_delay": 3000,
+        "post_delay": 10000,
         "next": [
             "StartGame_TouchStart",
             "StartGame_PayFaild"
@@ -27,7 +32,7 @@
             38
         ],
         "expected": "棕色尘埃2",
-        "post_delay": 3000,
+        "post_delay": 15000,
         "next": [
             "StartGame_TouchStart",
             "StartGame_PayFaild"
@@ -46,7 +51,7 @@
         "action": "Click",
         "post_delay": 3000,
         "next": [
-            "StartGame_HomePage"
+            "StartGame_TouchStart"
         ]
     },
     "StartGame_TouchStart": {
@@ -60,7 +65,7 @@
         ],
         "expected": "TOUCH",
         "action": "Click",
-        "post_delay": 3000,
+        "post_delay": 5000,
         "next": [
             "StartGame_HomePage"
         ]
@@ -76,30 +81,6 @@
         ],
         "template": [
             "pin.png"
-        ],
-        "next": [
-            "StartGame_returnToHomePage"
-        ]
-    },
-    "StartGame_HomePage2": {
-        "doc": "识别左下抽抽乐-主页",
-        "recognition": "OCR",
-        "roi": [
-            98,
-            656,
-            66,
-            32
-        ],
-        "expected": "抽抽乐",
-        "action": "Click",
-        "target": [
-            1111,
-            650,
-            0,
-            0
-        ],
-        "next": [
-            "StartGame_HomePage"
         ]
     }
 }

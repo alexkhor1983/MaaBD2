@@ -13,7 +13,7 @@
         ],
         "next": [
             "PVP_PVPStart",
-            "StartGame_BackHomePage"
+            "PVP_BackHomePage"
         ]
     },
     "PVP_BackHomePage": {
@@ -37,7 +37,7 @@
         ],
         "next": [
             "PVP_PVPBook",
-            "Banner"
+            "PVP_Banner"
         ]
     },
     "PVP_Banner": {
@@ -139,11 +139,11 @@
     "PVP_PVPStart": {
         "doc": "进入PVP舞台",
         "recognition": "TemplateMatch",
-        "recommended": [
-            487,
-            462,
-            86,
-            29
+        "roi": [
+            190,
+            238,
+            900,
+            620
         ],
         "template": "PVPstage.png",
         "action": "Click",
@@ -176,6 +176,7 @@
         ],
         "post_delay": 1000,
         "next": [
+            "PVP_AutoBattleStart",
             "PVP_AutoBattleButton",
             "PVP_AutoBattleButton2",
             "PVP_AutoBattleMAX"
@@ -249,29 +250,36 @@
         "doc": "识别战斗中",
         "recognition": "OCR",
         "roi": [
-            646,
-            558,
-            83,
-            34
+            63,
+            592,
+            79,
+            33
         ],
         "expected": "正在进行",
-        "post_delay": 100000,
+        "post_delay": 3000,
         "next": [
-            "PVP_BattleLeave"
+            "PVP_AutoBattle2",
+            "PVP_BattleResult"
         ]
     },
-    "PVP_Battle": {
-        "doc": "识别Battle____废弃",
+    "PVP_BattleResult": {
+        "doc": "反复战斗结果",
         "recognition": "OCR",
         "roi": [
-            1109,
-            625,
-            83,
-            37
+            1092,
+            653,
+            50,
+            34
         ],
-        "expected": "BATTLE",
+        "expected": "反复战斗结果",
         "action": "Click",
-        "post_delay": 10000,
+        "target": [
+            825,
+            172,
+            0,
+            0
+        ],
+        "post_delay": 2000,
         "next": [
             "PVP_BattleLeave"
         ]
@@ -289,11 +297,11 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "PVP_PVPMes",
-            "StartGame_HomePageFin"
+            "PVP_PVPMes_Back",
+            "PVP_HomePageFin"
         ]
     },
-    "PVP_PVPMes2": {
+    "PVP_PVPMes_Back": {
         "doc": "升降级点击确认",
         "recognition": "OCR",
         "roi": [
@@ -305,7 +313,7 @@
         "expected": "确认",
         "action": "Click",
         "next": [
-            "StartGame_HomePageFin"
+            "PVP_HomePageFin"
         ]
     },
     "PVP_HomePageFin": {

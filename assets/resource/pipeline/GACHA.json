@@ -19,8 +19,8 @@
             0
         ],
         "next": [
-            "PVE_StartGame_HomePage2",
-            "Banner"
+            "Gacha_EnterGacha",
+            "Gacha_Banner"
         ]
     },
     "Gacha_Banner": {
@@ -41,8 +41,8 @@
             0
         ],
         "next": [
-            "PVE_Banner2",
-            "PVE_StartGame_HomePage2"
+            "Gacha_Banner2",
+            "Gacha_EnterGacha"
         ]
     },
     "Gacha_Banner2": {
@@ -65,7 +65,7 @@
             0
         ],
         "next": [
-            "PVE_StartGame_HomePage2"
+            "Gacha_EnterGacha"
         ]
     },
     "Gacha_EnterGacha": {
@@ -100,11 +100,87 @@
         ],
         "expected": "查看概率",
         "next": [
-            "Gacha_StartGacha"
+            "Gacha_FindFreeGacha"
         ]
     },
-    "Gacha_StartGacha": {
-        "doc": "点击抽卡",
+    "Gacha_FindFreeGacha": {
+        "doc": "寻找免费抽卡",
+        "recognition": "TemplateMatch",
+        "roi": [
+            265,
+            144,
+            295,
+            515
+        ],
+        "template": "FreeGacha.png",
+        "action": "Click",
+        "next": [
+            "Gacha_TouchGacha",
+            "Gacha_FindFreeGacha",
+            "Gacha_FinGacha"
+        ]
+    },
+    "Gacha_TouchGacha": {
+        "doc": "点击右下抽卡",
+        "recognition": "OCR",
+        "roi": [
+            909,
+            653,
+            66,
+            31
+        ],
+        "expected": "免费1次",
+        "action": "Click",
+        "next": [
+            "Gacha_TouchGachaConfirm"
+        ]
+    },
+    "Gacha_TouchGachaConfirm": {
+        "doc": "确认抽卡",
+        "recognition": "OCR",
+        "roi": [
+            596,
+            371,
+            88,
+            36
+        ],
+        "expected": "免费1次",
+        "action": "Click",
+        "post_delay": 10000,
+        "target": [
+            700,
+            450,
+            0,
+            0
+        ],
+        "next": [
+            "Gacha_GachaResultBack"
+        ]
+    },
+    "Gacha_GachaResultBack": {
+        "doc": "抽卡结果页返回",
+        "recognition": "OCR",
+        "roi": [
+            117,
+            651,
+            101,
+            32
+        ],
+        "expected": "抽抽乐点数",
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            135,
+            400,
+            0,
+            0
+        ],
+        "next": [
+            "Gacha_GachaPage"
+        ]
+    },
+    "Gacha_FinGacha": {
+        "doc": "返回首页",
         "recognition": "OCR",
         "roi": [
             1066,
@@ -113,8 +189,13 @@
             35
         ],
         "expected": "查看概率",
-        "next": [
-            "PVE_PVEBook"
+        "action": "Click",
+        "post_delay": 1000,
+        "target": [
+            135,
+            400,
+            0,
+            0
         ]
     }
 }

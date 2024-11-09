@@ -225,6 +225,7 @@
         ],
         "template": "pve2.png",
         "action": "Click",
+        "post_delay": 5000,
         "next": [
             "Collect_StartGame_HomePage"
         ]
