@@ -28,6 +28,8 @@ wawazhe<!-- markdownlint-disable MD033 MD041 -->
 
 ## 开发中的功能
 
+* [O] GUI界面
+
 * [X] 启动游戏
 
 * [X] 日常任务

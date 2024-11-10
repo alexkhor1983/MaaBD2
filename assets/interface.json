@@ -3,14 +3,6 @@
         {
             "name": "安卓端",
             "type": "Adb"
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio"
-            }
         }
     ],
     "resource": [
@@ -19,56 +11,41 @@
             "path": [
                 "{PROJECT_DIR}/resource"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource",
-                "{PROJECT_DIR}/resource_bilibili"
-            ]
         }
     ],
     "task": [
         {
-            "name": "开始游戏",
-            "entry": "开始游戏"
+            "name": "启动游戏",
+            "entry": "StartGame_Start"
         },
         {
-            "name": "选项任务2",
-            "entry": "MyTask2",
-            "option": [
-                "任务选项1"
-            ]
+            "name": "竞技场",
+            "entry": "PVP_HomePage"
         },
         {
-            "name": "参数任务3",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
+            "name": "地图采集",
+            "entry": "Collect_StartGame_HomePage"
+        },
+        {
+            "name": "地图扫荡",
+            "entry": "Battle_StartGame_HomePage"
+        },
+        {
+            "name": "白嫖抽卡",
+            "entry": "Gacha_BackHomePage"
+        },
+        {
+            "name": "装备制作强化分解",
+            "entry": "Equip_HomePage"
+        },
+        {
+            "name": "开发1",
+            "entry": "Equip_HomePage"
+        },
+        {
+            "name": "开发2",
+            "entry": "Equip_HomePage"
         }
     ],
-    "option": {
-        "任务选项1": {
-            "cases": [
-                {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
-                },
-                {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
-                }
-            ]
-        }
-    }
+    "option": {}
 }
