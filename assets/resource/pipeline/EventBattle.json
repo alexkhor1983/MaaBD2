@@ -1,0 +1,19 @@
+{
+    "EventBattle_HomePage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "Battle_TouchCollect",
+            "Battle_HomePage2"
+        ]
+    }
+}
