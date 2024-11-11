@@ -212,5 +212,22 @@
             0,
             0
         ]
+    },
+    "Gacha_Test": {
+        "doc": "跳过抽卡等待  测试",
+        "recognition": "TemplateMatch",
+        "roi": [
+            627,
+            639,
+            26,
+            28
+        ],
+        "template": "equip2.png",
+        "threshold": 0.9,
+        "action": "Click",
+        "next": [
+            "Gacha_TouchGacha",
+            "Gacha_FindFreeGacha"
+        ]
     }
 }

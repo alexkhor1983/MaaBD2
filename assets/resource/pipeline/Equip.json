@@ -173,10 +173,10 @@
         "action": "Click",
         "post_delay": 1000,
         "next": [
-            "Equip_EquipUpSelect"
+            "Equip_EquipUpSelectN"
         ]
     },
-    "Equip_EquipUpSelect": {
+    "Equip_EquipUpSelectN": {
         "doc": "点击N",
         "recognition": "TemplateMatch",
         "roi": [
@@ -185,7 +185,25 @@
             81,
             49
         ],
+        "template": "N.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "Equip_EquipUpSelect"
+        ]
+    },
+    "Equip_EquipUpSelect": {
+        "doc": "点击对号",
+        "recognition": "TemplateMatch",
+        "roi": [
+            757,
+            293,
+            81,
+            49
+        ],
         "template": "N2.png",
+        "threshold": 0.99,
         "action": "Click",
         "target": [
             1142,
@@ -241,7 +259,7 @@
         ],
         "expected": "一键分解",
         "action": "Click",
-        "post_delay": 3000,
+        "post_delay": 1000,
         "next": [
             "Equip_EquipDec2"
         ]
@@ -259,19 +277,37 @@
         "action": "Click",
         "post_delay": 1000,
         "next": [
+            "Equip_EquipDecSelectN"
+        ]
+    },
+    "Equip_EquipDecSelectN": {
+        "doc": "点击N",
+        "recognition": "TemplateMatch",
+        "roi": [
+            751,
+            228,
+            94,
+            53
+        ],
+        "template": "N.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
             "Equip_EquipDecSelect"
         ]
     },
     "Equip_EquipDecSelect": {
-        "doc": "点击N",
+        "doc": "点击对号",
         "recognition": "TemplateMatch",
         "roi": [
-            757,
-            293,
-            81,
-            49
+            751,
+            228,
+            94,
+            53
         ],
         "template": "N2.png",
+        "threshold": 0.99,
         "action": "Click",
         "target": [
             1142,
@@ -279,7 +315,7 @@
             0,
             0
         ],
-        "post_delay": 1000,
+        "post_delay": 3000,
         "next": [
             "Equip_EquipDecSelect2"
         ]
@@ -289,7 +325,7 @@
         "recognition": "OCR",
         "roi": [
             680,
-            420,
+            471,
             54,
             33
         ],
@@ -373,5 +409,5 @@
             "pin.png"
         ],
         "next": []
-    },
+    }
 }

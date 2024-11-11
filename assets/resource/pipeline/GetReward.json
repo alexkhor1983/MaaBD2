@@ -1,19 +1,44 @@
 {
-    "GetReward_HomePage": {
-        "doc": "识别右下图钉-章节主页",
-        "recognition": "TemplateMatch",
+    "GetReward_EnterUnion": {
+        "doc": "识别左下抽抽乐-点击工会",
+        "recognition": "OCR",
         "roi": [
-            1122,
-            646,
-            40,
-            38
+            98,
+            656,
+            66,
+            32
         ],
-        "template": [
-            "pin.png"
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            220,
+            205,
+            0,
+            0
         ],
         "next": [
-            "Battle_TouchCollect",
-            "Battle_HomePage2"
+            "Gacha_GachaPage"
+        ]
+    },
+    "GetReward_DailyReward": {
+        "doc": "识别左下抽抽乐-点击任务",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            485,
+            645,
+            0,
+            0
+        ],
+        "next": [
+            "Gacha_GachaPage"
         ]
     }
 }

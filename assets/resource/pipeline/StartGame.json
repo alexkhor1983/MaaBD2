@@ -17,7 +17,7 @@
             64
         ],
         "expected": "NEO",
-        "post_delay": 10000,
+        "post_delay": 30000,
         "next": [
             "StartGame_TouchStart",
             "StartGame_PayFaild"

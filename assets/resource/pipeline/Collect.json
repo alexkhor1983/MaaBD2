@@ -94,8 +94,39 @@
             0
         ],
         "next": [
+            "Collect_PetTask"
+        ],
+        "on_error": "Collect_HomePageFin"
+    },
+    "Collect_PetTask": {
+        "doc": "宠物派遣",
+        "recognition": "TemplateMatch",
+        "roi": [
+            866,
+            550,
+            28,
+            28
+        ],
+        "action": "Click",
+        "post_delay": 5000,
+        "template": "PetTask.png",
+        "next": [
             "Collect_HomePageFin"
         ]
+    },
+    "Collect_HomePageFin": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": []
     },
     "Collect_BackPVEPage": {
         "doc": "找到图钉-点击返回主页",
@@ -229,19 +260,5 @@
         "next": [
             "Collect_StartGame_HomePage"
         ]
-    },
-    "Collect_HomePageFin": {
-        "doc": "识别右下图钉-章节主页",
-        "recognition": "TemplateMatch",
-        "roi": [
-            1122,
-            646,
-            40,
-            38
-        ],
-        "template": [
-            "pin.png"
-        ],
-        "next": []
     }
 }

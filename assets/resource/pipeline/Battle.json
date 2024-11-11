@@ -49,7 +49,7 @@
             35
         ],
         "expected": "快速狩猎",
-        "post_delay": 2000,
+        "post_delay": 3000,
         "action": "Click",
         "next": [
             "Battle_FastBattle"
@@ -66,7 +66,7 @@
         ],
         "expected": "快速狩猎",
         "action": "Click",
-        "post_delay": 2000,
+        "post_delay": 3000,
         "target": [
             700,
             545,
@@ -88,7 +88,7 @@
         ],
         "expected": "REWARD",
         "action": "Click",
-        "post_delay": 2000,
+        "post_delay": 3000,
         "target": [
             650,
             500,
