@@ -33,6 +33,7 @@
         ],
         "expected": "棕色尘埃2",
         "post_delay": 15000,
+        "pre_wait_freezes": 5000,
         "next": [
             "StartGame_TouchStart",
             "StartGame_PayFaild"
@@ -65,7 +66,24 @@
         ],
         "expected": "TOUCH",
         "action": "Click",
-        "post_delay": 5000,
+        "post_delay": 10000,
+        "next": [
+            "StartGame_HomePage",
+            "StartGame_PVPSet"
+        ]
+    },
+    "StartGame_PVPSet": {
+        "doc": "段位结算，点击确认",
+        "recognition": "OCR",
+        "roi": [
+            612,
+            642,
+            53,
+            35
+        ],
+        "expected": "确认",
+        "action": "Click",
+        "post_delay": 2000,
         "next": [
             "StartGame_HomePage"
         ]

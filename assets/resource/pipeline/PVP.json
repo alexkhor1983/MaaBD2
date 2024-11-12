@@ -37,7 +37,8 @@
         ],
         "next": [
             "PVP_PVPBook",
-            "PVP_Banner"
+            "PVP_Banner",
+            "PVP_HomePage2"
         ]
     },
     "PVP_Banner": {
@@ -81,7 +82,7 @@
             0
         ],
         "next": [
-            "PVP_PVPBook"
+            "PVP_HomePage2"
         ]
     },
     "PVP_HomePage2": {
@@ -115,6 +116,7 @@
             34
         ],
         "template": "pvp.png",
+        "post_delay": 5000,
         "action": "Click",
         "next": [
             "PVP_PVPStart",
@@ -147,6 +149,7 @@
         ],
         "template": "PVPstage.png",
         "action": "Click",
+        "post_delay": 3000,
         "target": [
             529,
             414,
@@ -266,10 +269,10 @@
         "doc": "反复战斗结果",
         "recognition": "OCR",
         "roi": [
-            1092,
-            653,
-            50,
-            34
+            558,
+            178,
+            165,
+            43
         ],
         "expected": "反复战斗结果",
         "action": "Click",

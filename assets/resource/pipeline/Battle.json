@@ -12,8 +12,7 @@
             "pin.png"
         ],
         "next": [
-            "Battle_TouchCollect",
-            "Battle_HomePage2"
+            "Battle_TouchCollect"
         ]
     },
     "Battle_TouchCollect": {
@@ -66,7 +65,7 @@
         ],
         "expected": "快速狩猎",
         "action": "Click",
-        "post_delay": 3000,
+        "post_delay": 5000,
         "target": [
             700,
             545,
@@ -81,20 +80,14 @@
         "doc": "狩猎Reward",
         "recognition": "OCR",
         "roi": [
-            562,
-            165,
-            159,
-            56
+            558,
+            630,
+            147,
+            34
         ],
-        "expected": "REWARD",
+        "expected": "点击画面即可返回",
         "action": "Click",
         "post_delay": 3000,
-        "target": [
-            650,
-            500,
-            0,
-            0
-        ],
         "next": [
             "Battle_DoubleReward"
         ]
@@ -171,20 +164,14 @@
         "doc": "狩猎Reward",
         "recognition": "OCR",
         "roi": [
-            562,
-            165,
-            159,
-            56
+            558,
+            630,
+            147,
+            34
         ],
-        "expected": "REWARD",
+        "expected": "点击画面即可返回",
         "action": "Click",
-        "post_delay": 2000,
-        "target": [
-            650,
-            500,
-            0,
-            0
-        ],
+        "post_delay": 3000,
         "next": [
             "Battle_StoneBattle"
         ]
@@ -272,7 +259,7 @@
         ],
         "expected": "快速狩猎",
         "action": "Click",
-        "post_delay": 2000,
+        "post_delay": 5000,
         "target": [
             700,
             545,
@@ -287,20 +274,14 @@
         "doc": "狩猎Reward",
         "recognition": "OCR",
         "roi": [
-            562,
-            165,
-            159,
-            56
+            558,
+            630,
+            147,
+            34
         ],
-        "expected": "REWARD",
+        "expected": "点击画面即可返回",
         "action": "Click",
-        "post_delay": 2000,
-        "target": [
-            650,
-            500,
-            0,
-            0
-        ],
+        "post_delay": 3000,
         "next": [
             "Battle_BackHomePage"
         ]
@@ -322,127 +303,5 @@
             0,
             0
         ]
-    },
-    "Battle_Banner": {
-        "doc": "商城推广礼包，点击关闭",
-        "recognition": "OCR",
-        "roi": [
-            916,
-            102,
-            143,
-            38
-        ],
-        "expected": "7天内不再显示",
-        "action": "Click",
-        "target": [
-            1130,
-            500,
-            0,
-            0
-        ],
-        "next": [
-            "Collect_Banner2",
-            "Collect_HomePage2"
-        ]
-    },
-    "Battle_Banner2": {
-        "doc": "公告弹窗",
-        "recognition": "TemplateMatch",
-        "roi": [
-            625,
-            107,
-            28,
-            34
-        ],
-        "template": [
-            "banner2.png"
-        ],
-        "action": "Click",
-        "target": [
-            1130,
-            500,
-            0,
-            0
-        ],
-        "next": [
-            "Collect_HomePage2"
-        ]
-    },
-    "Battle_HomePage2": {
-        "doc": "识别左下抽抽乐-主页-点击选择章节",
-        "recognition": "OCR",
-        "roi": [
-            98,
-            656,
-            66,
-            32
-        ],
-        "expected": "抽抽乐",
-        "action": "Click",
-        "target": [
-            1111,
-            650,
-            0,
-            0
-        ],
-        "next": [
-            "Collect_PVEBookSwipe"
-        ]
-    },
-    "Battle_PVEBookSwipe": {
-        "doc": "识别活动游戏卡-上划",
-        "recognition": "OCR",
-        "roi": [
-            118,
-            505,
-            95,
-            42
-        ],
-        "expected": "活动游戏卡",
-        "action": "Swipe",
-        "begin": [
-            1400,
-            300,
-            0,
-            0
-        ],
-        "end": [
-            1400,
-            700,
-            0,
-            0
-        ],
-        "next": [
-            "Collect_TouchPVEBook"
-        ]
-    },
-    "Battle_TouchPVEBook": {
-        "doc": "点击PVE本子2",
-        "recognition": "TemplateMatch",
-        "roi": [
-            405,
-            157,
-            78,
-            38
-        ],
-        "template": "pve2.png",
-        "action": "Click",
-        "next": [
-            "Collect_StartGame_HomePage"
-        ]
-    },
-    "Battle_HomePageFin": {
-        "doc": "识别右下图钉-章节主页",
-        "recognition": "TemplateMatch",
-        "roi": [
-            1122,
-            646,
-            40,
-            38
-        ],
-        "template": [
-            "pin.png"
-        ],
-        "next": []
     }
 }

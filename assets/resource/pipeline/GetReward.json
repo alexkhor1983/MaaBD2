@@ -10,6 +10,7 @@
         ],
         "expected": "抽抽乐",
         "action": "Click",
+        "post_delay": 3000,
         "target": [
             220,
             205,
@@ -17,11 +18,115 @@
             0
         ],
         "next": [
-            "Gacha_GachaPage"
+            "GetReward_UnionGUI"
         ]
     },
+    "GetReward_UnionGUI": {
+        "doc": "工会签到",
+        "recognition": "OCR",
+        "roi": [
+            552,
+            506,
+            158,
+            35
+        ],
+        "expected": "奖励已发放至信箱",
+        "action": "Click",
+        "next": [
+            "GetReward_UnionBack"
+        ]
+    },
+    "GetReward_UnionBack": {
+        "doc": "工会返回主页",
+        "recognition": "OCR",
+        "roi": [
+            219,
+            21,
+            65,
+            41
+        ],
+        "expected": "公会",
+        "action": "Click",
+        "target": [
+            135,
+            38,
+            0,
+            0
+        ],
+        "next": []
+    },
     "GetReward_DailyReward": {
-        "doc": "识别左下抽抽乐-点击任务",
+        "doc": "识别点击任务",
+        "recognition": "OCR",
+        "roi": [
+            460,
+            656,
+            45,
+            32
+        ],
+        "expected": "任务",
+        "action": "Click",
+        "next": [
+            "GetReward_GetDailyReward"
+        ]
+    },
+    "GetReward_GetDailyReward": {
+        "doc": "点击领取全部",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1022,
+            640,
+            138,
+            38
+        ],
+        "template": "dailyreward.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "GetReward_GetDailyRewardBack"
+        ]
+    },
+    "GetReward_GetDailyRewardBack": {
+        "doc": "点击领取全部返回",
+        "recognition": "OCR",
+        "roi": [
+            558,
+            630,
+            147,
+            34
+        ],
+        "expected": "点击画面即可返回",
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "GetReward_BackHomePage"
+        ]
+    },
+    "GetReward_BackHomePage": {
+        "doc": "点击领取全部返回",
+        "recognition": "OCR",
+        "roi": [
+            215,
+            19,
+            122,
+            42
+        ],
+        "expected": "每日任务",
+        "action": "Click",
+        "post_delay": 3000,
+        "target": [
+            135,
+            38,
+            0,
+            0
+        ],
+        "next": [
+            "GetReward_FinGetReward"
+        ]
+    },
+    "GetReward_FinGetReward": {
+        "doc": "识别左下抽抽乐-点击工会",
         "recognition": "OCR",
         "roi": [
             98,
@@ -30,15 +135,6 @@
             32
         ],
         "expected": "抽抽乐",
-        "action": "Click",
-        "target": [
-            485,
-            645,
-            0,
-            0
-        ],
-        "next": [
-            "Gacha_GachaPage"
-        ]
+        "next": []
     }
 }

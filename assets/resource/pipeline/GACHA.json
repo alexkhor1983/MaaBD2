@@ -19,8 +19,33 @@
             0
         ],
         "next": [
+            "Gacha_DaliyBanner",
             "Gacha_EnterGacha",
             "Gacha_Banner"
+        ]
+    },
+    "Gacha_DaliyBanner": {
+        "doc": "每日签到第一日签到识别",
+        "recognition": "OCR",
+        "roi": [
+            571,
+            209,
+            84,
+            30
+        ],
+        "expected": "签到成功",
+        "action": "Click",
+        "post_delay": 3000,
+        "target": [
+            1035,
+            175,
+            0,
+            0
+        ],
+        "next": [
+            "Gacha_Banner",
+            "Gacha_Banner2",
+            "Gacha_EnterGacha"
         ]
     },
     "Gacha_Banner": {
@@ -34,6 +59,7 @@
         ],
         "expected": "7天内不再显示",
         "action": "Click",
+        "post_delay": 3000,
         "target": [
             1130,
             500,
@@ -48,6 +74,7 @@
     "Gacha_Banner2": {
         "doc": "公告弹窗",
         "recognition": "TemplateMatch",
+        "post_delay": 3000,
         "roi": [
             625,
             107,
