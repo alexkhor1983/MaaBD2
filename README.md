@@ -22,15 +22,15 @@
  1. 推荐使用MuMu模拟器12运行游戏，模拟器显示建议设置为`平板版 1920*1080 (DPI 280)`。
  2.游戏内设置均为默认，其中[操作-选择操作方式-点击地面] [图像-分辨率-FHD]
  3.游戏地图为剧情第二本-禁地矿山
- <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map.png"  />
- <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map2.png"  />
+ <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map.png" width="210px" />
+ <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map2.png"  width="210px"/>
  4.技能设置如下排序
- <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/skill.png"  />
+ <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/skill.png"  width="210px"/>
  
 
 ## 开发中的功能
 
-* [X] GUI界面
+* [X] GUI界面 可用
 
 * [X] 启动游戏 可用
 
@@ -40,7 +40,7 @@
   * [X] 采集派遣 可用
   * [X] 白嫖抽卡 可用
   * [X] 装备制作强化分解 更新中
-  * [O] 领取日常任务奖励 可用
+  * [X] 领取日常任务奖励 可用
 
 * [O] 活动图
   * [O] 普通关卡推图+扫荡
