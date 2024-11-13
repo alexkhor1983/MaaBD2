@@ -349,7 +349,7 @@
         "action": "Click",
         "post_delay": 3000,
         "next": [
-            "Equip_FinEquip"
+            "Equip_filter"
         ]
     },
     "Equip_filter": {
