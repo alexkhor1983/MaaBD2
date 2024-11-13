@@ -352,6 +352,73 @@
             "Equip_FinEquip"
         ]
     },
+    "Equip_FindRefining": {
+        "doc": "寻找+9装备并点击",
+        "recognition": "OCR",
+        "roi": [
+            576,
+            80,
+            603,
+            561
+        ],
+        "expected": "9",
+        "action": "Click",
+        "next": [
+            "Equip_Refining"
+        ]
+    },
+    "Equip_Refining": {
+        "doc": "点击精炼",
+        "recognition": "OCR",
+        "roi": [
+            940,
+            498,
+            42,
+            32
+        ],
+        "expected": "精炼",
+        "action": "Click",
+        "next": [
+            "Equip_FinEquip2"
+        ]
+    },
+    "Equip_TouchRefining": {
+        "doc": "精炼界面，点击精炼2",
+        "recognition": "OCR",
+        "roi": [
+            979,
+            642,
+            52,
+            33
+        ],
+        "expected": "精炼",
+        "action": "Click",
+        "post_delay": 3000,
+        "next": [
+            "Equip_TouchRefiningBack"
+        ]
+    },
+    "Equip_TouchRefiningBack": {
+        "doc": "精炼界面，返回",
+        "recognition": "OCR",
+        "roi": [
+            979,
+            642,
+            52,
+            33
+        ],
+        "expected": "精炼",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ],
+        "next": [
+            "Equip_FinEquip2"
+        ]
+    },
     "Equip_FinEquip": {
         "doc": "返回装备制作",
         "recognition": "OCR",

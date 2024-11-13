@@ -1,4 +1,43 @@
 {
+    "GetReward_HomePage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "GetReward_BackHomePage"
+        ]
+    },
+    "GetReward_BackHomePage": {
+        "doc": "找到图钉-点击返回主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "action": "Click",
+        "target": [
+            1186,
+            46,
+            0,
+            0
+        ],
+        "next": [
+            "GetReward_EnterUnion"
+        ]
+    },
     "GetReward_EnterUnion": {
         "doc": "识别左下抽抽乐-点击工会",
         "recognition": "OCR",
@@ -53,7 +92,9 @@
             0,
             0
         ],
-        "next": []
+        "next": [
+            "GetReward_DailyReward"
+        ]
     },
     "GetReward_DailyReward": {
         "doc": "识别点击任务",
@@ -100,10 +141,10 @@
         "action": "Click",
         "post_delay": 3000,
         "next": [
-            "GetReward_BackHomePage"
+            "GetReward_BackHomePage2"
         ]
     },
-    "GetReward_BackHomePage": {
+    "GetReward_BackHomePage2": {
         "doc": "点击领取全部返回",
         "recognition": "OCR",
         "roi": [
@@ -126,7 +167,7 @@
         ]
     },
     "GetReward_FinGetReward": {
-        "doc": "识别左下抽抽乐-点击工会",
+        "doc": "识别左下抽抽乐",
         "recognition": "OCR",
         "roi": [
             98,
@@ -135,6 +176,26 @@
             32
         ],
         "expected": "抽抽乐",
-        "next": []
+        "next": [
+            "GetReward_BackMapPage"
+        ]
+    },
+    "GetReward_BackMapPage": {
+        "doc": "识别左下抽抽乐-返回地图页",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ]
     }
 }

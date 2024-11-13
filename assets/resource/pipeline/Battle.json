@@ -149,7 +149,7 @@
         ],
         "expected": "快速狩猎",
         "action": "Click",
-        "post_delay": 2000,
+        "post_delay": 5000,
         "target": [
             700,
             545,
