@@ -352,17 +352,99 @@
             "Equip_FinEquip"
         ]
     },
-    "Equip_FindRefining": {
-        "doc": "寻找+9装备并点击",
+    "Equip_filter": {
+        "doc": "点击左上筛选",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1096,
+            22,
+            33,
+            34
+        ],
+        "template": "filter.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "Equip_filterN"
+        ]
+    },
+    "Equip_filterN": {
+        "doc": "点击筛选",
+        "recognition": "TemplateMatch",
+        "roi": [
+            275,
+            352,
+            42,
+            39
+        ],
+        "template": "filterN.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "Equip_filterSR"
+        ]
+    },
+    "Equip_filterSR": {
+        "doc": "点击筛选",
+        "recognition": "TemplateMatch",
+        "roi": [
+            459,
+            352,
+            47,
+            38
+        ],
+        "template": "filterSR.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "Equip_filterUR"
+        ]
+    },
+    "Equip_filterUR": {
+        "doc": "点击筛选",
+        "recognition": "TemplateMatch",
+        "roi": [
+            554,
+            350,
+            46,
+            38
+        ],
+        "template": "filterUR.png",
+        "threshold": 0.99,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "Equip_filterON"
+        ]
+    },
+    "Equip_filterON": {
+        "doc": "应用筛选",
         "recognition": "OCR",
         "roi": [
-            576,
-            80,
-            603,
-            561
+            678,
+            506,
+            48,
+            34
         ],
-        "expected": "9",
+        "expected": "应用",
         "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "Equip_FindRefining"
+        ]
+    },
+    "Equip_FindRefining": {
+        "doc": "点击第一个装备",
+        "action": "Click",
+        "target": [
+            619,
+            126,
+            0,
+            0
+        ],
         "next": [
             "Equip_Refining"
         ]
@@ -379,7 +461,7 @@
         "expected": "精炼",
         "action": "Click",
         "next": [
-            "Equip_FinEquip2"
+            "Equip_TouchRefining"
         ]
     },
     "Equip_TouchRefining": {

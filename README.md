@@ -13,15 +13,19 @@
 > 低代码的同时仍拥有高扩展性，旨在打造一款丰富、领先、且实用的开源库，助力开发者轻松编写出更好的黑盒测试程序，并推广普及。
 
 
-## 使用前提
 
-1. 推荐使用MuMu模拟器12运行游戏，模拟器显示建议设置为`平板版 1920*1080 (DPI 280)`。
 
 ## 使用方式
 
  
- > 功能正在调试中，功能卡死很正常，目前不推荐下载使用，等我慢慢更新
-
+ > 功能正在调试中，功能卡死很正常，有问题可提交issues
+ 1. 推荐使用MuMu模拟器12运行游戏，模拟器显示建议设置为`平板版 1920*1080 (DPI 280)`。
+ 2.游戏内设置均为默认，其中[操作-选择操作方式-点击地面] [图像-分辨率-FHD]
+ 3.游戏地图为剧情第二本-禁地矿山
+ <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map.png"  />
+ <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map2.png"  />
+ 4.技能设置如下排序
+ <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/skill.png"  />
  
 
 ## 开发中的功能
