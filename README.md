@@ -28,7 +28,7 @@
 
  > 4.一些配置如下，配置一次就可以了
 
- 装备请保留并锁定一件 N +9的装备用来精炼
+ > 装备请保留并锁定一件 N +9的装备用来精炼
 
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/1.png"  width="210px"/>
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/2.png"  width="210px"/>
@@ -75,10 +75,5 @@
 
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
-感谢以下开发者对本作出的贡献:
-
-<a href="https://github.com/JZPPP/MaaBD2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=/JZPPP/MaaBD2&max=100" />
-</a>
 
 ![Visitor Count](https://profile-counter.glitch.me/JZPPP/count.svg)
