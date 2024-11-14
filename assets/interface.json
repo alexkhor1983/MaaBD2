@@ -43,6 +43,14 @@
             "entry": "GetReward_HomePage"
         },
         {
+            "name": "领取通行证奖励",
+            "entry": "Pass_HomePage"
+        },
+        {
+            "name": "领取邮件",
+            "entry": "Mail_HomePage"
+        },
+        {
             "name": "活动图扫荡",
             "entry": "Event_HomePage"
         }

@@ -56,5 +56,140 @@
             0
         ],
         "next": []
+    },
+    "Pass_SelectPass": {
+        "doc": "选择通行证",
+        "recognition": "TemplateMatch",
+        "roi": [
+            240,
+            140,
+            56,
+            300
+        ],
+        "template": [
+            "Pass.png"
+        ],
+        "action": "Click",
+        "next": [
+            "Pass_SelectPassTask"
+        ]
+    },
+    "Pass_SelectPassTask": {
+        "doc": "选择通行证任务",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1148,
+            469,
+            30,
+            30
+        ],
+        "template": [
+            "Pass.png"
+        ],
+        "action": "Click",
+        "next": [
+            "Pass_GetAll"
+        ]
+    },
+    "Pass_GetAll": {
+        "doc": "全部获得",
+        "recognition": "OCR",
+        "roi": [
+            981,
+            559,
+            82,
+            36
+        ],
+        "expected": "全部获得",
+        "action": "Click",
+        "next": [
+            "Pass_GetAllBack"
+        ]
+    },
+    "Pass_GetAllBack": {
+        "doc": "点击画面即可返回",
+        "recognition": "OCR",
+        "roi": [
+            556,
+            628,
+            148,
+            36
+        ],
+        "expected": "点击画面即可返回",
+        "action": "Click",
+        "next": [
+            "Pass_SelectPassLev"
+        ]
+    },
+    "Pass_SelectPassLev": {
+        "doc": "选择通行证等级",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1145,
+            230,
+            34,
+            37
+        ],
+        "template": [
+            "Pass.png"
+        ],
+        "action": "Click",
+        "next": [
+            "Pass_LevGetAll"
+        ]
+    },
+    "Pass_LevGetAll": {
+        "doc": "全部获得",
+        "recognition": "OCR",
+        "roi": [
+            981,
+            559,
+            82,
+            36
+        ],
+        "expected": "全部获得",
+        "action": "Click",
+        "next": [
+            "Pass_Back"
+        ]
+    },
+    "Pass_Back": {
+        "doc": "返回",
+        "recognition": "OCR",
+        "roi": [
+            215,
+            14,
+            102,
+            50
+        ],
+        "expected": "通行证",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ],
+        "next": [
+            "Pass_BackMapPage"
+        ]
+    },
+    "Pass_BackMapPage": {
+        "doc": "识别左下抽抽乐-返回地图页",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ]
     }
 }
