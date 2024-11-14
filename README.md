@@ -26,12 +26,15 @@
 
  > 3.各项功能开始都以游戏地图为剧情第二本-禁地矿山进行判断，结束后也会返回此地图。
 
- > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map.png" width="210px" />
- > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map2.png"  width="210px"/>
+ > 4.一些配置如下，配置一次就可以了
 
- > 4.技能设置如下排序
+ 装备请保留并锁定一件 N +9的装备用来精炼
 
- > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/skill.png"  width="210px"/>
+ > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/1.png"  width="210px"/>
+ > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/2.png"  width="210px"/>
+ > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/3.png"  width="210px"/>
+ > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/4.png"  width="210px"/>
+ > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/5.png"  width="210px"/>
  
 
 ## 功能一览
