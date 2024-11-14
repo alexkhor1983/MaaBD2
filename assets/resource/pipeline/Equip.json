@@ -373,12 +373,12 @@
         "doc": "点击筛选",
         "recognition": "TemplateMatch",
         "roi": [
-            275,
+            359,
             352,
-            42,
+            59,
             39
         ],
-        "template": "filterN.png",
+        "template": "filterR.png",
         "threshold": 0.99,
         "action": "Click",
         "post_delay": 1000,

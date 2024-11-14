@@ -19,10 +19,6 @@
             "entry": "StartGame_Start"
         },
         {
-            "name": "竞技场",
-            "entry": "PVP_HomePage"
-        },
-        {
             "name": "地图采集",
             "entry": "Collect_StartGame_HomePage"
         },
@@ -31,20 +27,24 @@
             "entry": "Battle_StartGame_HomePage"
         },
         {
-            "name": "白嫖抽卡",
-            "entry": "Gacha_BackHomePage"
-        },
-        {
             "name": "装备制作强化分解",
             "entry": "Equip_HomePage"
         },
         {
-            "name": "活动图扫荡",
-            "entry": "Equip_HomePage"
+            "name": "白嫖抽卡",
+            "entry": "Gacha_BackHomePage"
+        },
+        {
+            "name": "竞技场",
+            "entry": "PVP_HomePage"
         },
         {
             "name": "领取日常奖励",
-            "entry": "Equip_HomePage"
+            "entry": "GetReward_HomePage"
+        },
+        {
+            "name": "活动图扫荡",
+            "entry": "Event_HomePage"
         }
     ],
     "option": {}

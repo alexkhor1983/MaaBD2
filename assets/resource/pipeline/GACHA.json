@@ -155,6 +155,12 @@
         "template": "equip2.png",
         "threshold": 0.95,
         "action": "Click",
+        "target": [
+            1157,
+            50,
+            0,
+            0
+        ],
         "next": [
             "Gacha_GachaResultBack"
         ]

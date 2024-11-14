@@ -37,7 +37,72 @@
         "pre_wait_freezes": 5000,
         "next": [
             "StartGame_TouchStart",
-            "StartGame_PayFaild"
+            "StartGame_PayFaild",
+            "StartGame_UpdateDate",
+            "StartGame_Update"
+        ]
+    },
+    "StartGame_Update": {
+        "doc": "游戏版本更新",
+        "recognition": "OCR",
+        "roi": [
+            580,
+            258,
+            119,
+            44
+        ],
+        "expected": "更新通知",
+        "post_delay": 15000,
+        "pre_wait_freezes": 5000,
+        "next": []
+    },
+    "StartGame_UpdateDate": {
+        "doc": "下载数据",
+        "recognition": "OCR",
+        "roi": [
+            578,
+            262,
+            124,
+            51
+        ],
+        "expected": "下载",
+        "action": "Click",
+        "post_delay": 10000,
+        "next": [
+            "StartGame_TouchStart"
+        ]
+    },
+    "StartGame_UpdateDateing": {
+        "doc": "下载数据中",
+        "recognition": "OCR",
+        "roi": [
+            77,
+            621,
+            84,
+            33
+        ],
+        "expected": "正在下载",
+        "post_delay": 10000,
+        "next": [
+            "StartGame_UpdateDateing",
+            "StartGame_PayFaild",
+            "StartGame_TouchStart"
+        ]
+    },
+    "StartGame_Loading": {
+        "doc": "游戏启动中",
+        "recognition": "OCR",
+        "roi": [
+            935,
+            480,
+            98,
+            34
+        ],
+        "expected": "游戏启动中",
+        "post_delay": 50000,
+        "next": [
+            "StartGame_PayFaild",
+            "StartGame_TouchStart"
         ]
     },
     "StartGame_PayFaild": {
@@ -70,7 +135,24 @@
         "post_delay": 10000,
         "next": [
             "StartGame_MapPage",
-            "StartGame_PVPSet"
+            "StartGame_PVPSet",
+            "StartGame_SeasonSet"
+        ]
+    },
+    "StartGame_SeasonSet": {
+        "doc": "赛季结算",
+        "recognition": "OCR",
+        "roi": [
+            813,
+            580,
+            145,
+            34
+        ],
+        "expected": "奖励已发放至背包",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "StartGame_MapPage"
         ]
     },
     "StartGame_PVPSet": {

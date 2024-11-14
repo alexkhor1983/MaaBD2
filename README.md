@@ -30,27 +30,28 @@
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/map2.png"  width="210px"/>
 
  > 4.技能设置如下排序
+
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/skill.png"  width="210px"/>
  
 
-## 开发中的功能
+## 功能一览
 
-* [X] GUI界面 可用
+* [X] GUI界面 
 
-* [X] 启动游戏 可用
+* [X] 启动游戏 
 
 * [X] 日常任务
-  * [X] 扫荡 可用
-  * [X] PVP 可用
-  * [X] 采集派遣 可用
-  * [X] 白嫖抽卡 可用
-  * [X] 装备制作强化分解 更新中
-  * [X] 领取日常任务奖励 可用
-  * [X] 领取通行证奖励 
+  * [X] 扫荡 
+  * [X] PVP 
+  * [X] 采集派遣 
+  * [X] 白嫖抽卡 
+  * [X] 装备制作强化分解 
+  * [X] 领取日常任务奖励 
+  * [开发中] 领取通行证奖励 
 
-* [O] 活动图
-  * [O] 普通关卡扫荡
-  * [O] 小游戏扫荡
+* [开发中] 活动图
+  * [开发中] 普通关卡扫荡
+  * [开发中] 小游戏扫荡
 
 ### 致谢
 
