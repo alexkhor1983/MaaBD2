@@ -35,10 +35,10 @@
             0
         ],
         "next": [
-            "Mail_EnterPass"
+            "Mail_EnterMail"
         ]
     },
-    "Mail_EnterPass": {
+    "Mail_EnterMail": {
         "doc": "识别左下抽抽乐-点击通行证",
         "recognition": "OCR",
         "roi": [
@@ -50,11 +50,80 @@
         "expected": "抽抽乐",
         "action": "Click",
         "target": [
-            1150,
-            245,
+            1030,
+            45,
             0,
             0
         ],
         "next": []
+    },
+    "Mail_GetAll": {
+        "doc": "全部领取",
+        "recognition": "OCR",
+        "roi": [
+            1048,
+            641,
+            87,
+            35
+        ],
+        "expected": "全部领取",
+        "action": "Click",
+        "next": [
+            "Mail_GetAllBack"
+        ]
+    },
+    "Mail_GetAllBack": {
+        "doc": "点击画面即可返回",
+        "recognition": "OCR",
+        "roi": [
+            556,
+            628,
+            148,
+            36
+        ],
+        "expected": "点击画面即可返回",
+        "action": "Click",
+        "next": [
+            "Mail_BackHomePage2"
+        ]
+    },
+    "Mail_BackHomePage2": {
+        "doc": "普通信箱,返回",
+        "recognition": "OCR",
+        "roi": [
+            215,
+            20,
+            119,
+            42
+        ],
+        "expected": "普通信箱",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ],
+        "next": [
+            "Mail_BackMapPage"
+        ]
+    },
+    "Mail_BackMapPage": {
+        "doc": "识别左下抽抽乐-返回地图页",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ]
     }
 }

@@ -491,6 +491,7 @@
         ],
         "expected": "精炼",
         "action": "Click",
+        "post_delay": 3000,
         "target": [
             135,
             40,

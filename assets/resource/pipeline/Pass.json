@@ -55,7 +55,9 @@
             0,
             0
         ],
-        "next": []
+        "next": [
+            "Pass_SelectPass"
+        ]
     },
     "Pass_SelectPass": {
         "doc": "选择通行证",
@@ -118,7 +120,8 @@
         "expected": "点击画面即可返回",
         "action": "Click",
         "next": [
-            "Pass_SelectPassLev"
+            "Pass_SelectPassLev",
+            "Pass_Back"
         ]
     },
     "Pass_SelectPassLev": {
@@ -150,6 +153,7 @@
         "expected": "全部获得",
         "action": "Click",
         "next": [
+            "Pass_SelectPass",
             "Pass_Back"
         ]
     },

@@ -167,9 +167,9 @@
         "recognition": "OCR",
         "roi": [
             598,
-            639,
-            84,
-            32
+            617,
+            90,
+            60
         ],
         "expected": "战场探索",
         "action": "Click",
