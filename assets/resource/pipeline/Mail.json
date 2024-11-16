@@ -55,7 +55,9 @@
             0,
             0
         ],
-        "next": []
+        "next": [
+            "Mail_GetAll"
+        ]
     },
     "Mail_GetAll": {
         "doc": "全部领取",

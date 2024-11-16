@@ -180,6 +180,7 @@
             40,
             38
         ],
+        "post_delay": 2000,
         "template": [
             "pin.png"
         ],
@@ -200,6 +201,8 @@
             "pin.png"
         ],
         "action": "Click",
+        "post_delay": 2000,
+        "pre_delay": 2000,
         "target": [
             1186,
             46,
@@ -223,7 +226,8 @@
         ],
         "expected": "签到成功",
         "action": "Click",
-        "post_delay": 3000,
+        "post_delay": 2000,
+        "pre_delay": 2000,
         "target": [
             1035,
             175,
@@ -247,7 +251,8 @@
         ],
         "expected": "7天内不再显示",
         "action": "Click",
-        "post_delay": 3000,
+        "post_delay": 2000,
+        "pre_delay": 2000,
         "target": [
             1130,
             500,
@@ -262,7 +267,8 @@
     "StartGame_Banner2": {
         "doc": "公告弹窗",
         "recognition": "TemplateMatch",
-        "post_delay": 3000,
+        "post_delay": 2000,
+        "pre_delay": 2000,
         "roi": [
             625,
             107,
@@ -294,6 +300,7 @@
         ],
         "expected": "抽抽乐",
         "action": "Click",
+        "post_delay": 2000,
         "target": [
             135,
             40,
