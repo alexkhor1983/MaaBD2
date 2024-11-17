@@ -17,8 +17,9 @@
             64
         ],
         "expected": "NEO",
-        "post_delay": 30000,
+        "post_delay": 5000,
         "next": [
+            "StartGame_Logo",
             "StartGame_LoadingPage",
             "StartGame_TouchStart",
             "StartGame_PayFaild"
@@ -33,8 +34,8 @@
             38
         ],
         "expected": "棕色尘埃2",
-        "post_delay": 15000,
-        "pre_wait_freezes": 5000,
+        "post_delay": 5000,
+        "pre_wait_freezes": 3000,
         "next": [
             "StartGame_TouchStart",
             "StartGame_PayFaild",
@@ -99,8 +100,9 @@
             34
         ],
         "expected": "游戏启动中",
-        "post_delay": 50000,
+        "post_delay": 30000,
         "next": [
+            "StartGame_Loading",
             "StartGame_PayFaild",
             "StartGame_TouchStart"
         ]
@@ -211,8 +213,8 @@
         ],
         "next": [
             "StartGame_DaliyBanner",
-            "StartGame_BackMapPage",
-            "StartGame_Banner"
+            "StartGame_Banner",
+            "StartGame_BackMapPage"
         ]
     },
     "StartGame_DaliyBanner": {
@@ -236,9 +238,9 @@
         ],
         "next": [
             "StartGame_Banner",
-            "StartGame_Banner2",
-            "StartGame_BackMapPage"
-        ]
+            "StartGame_Banner2"
+        ],
+        "on_error": "StartGame_BackMapPage"
     },
     "StartGame_Banner": {
         "doc": "商城推广礼包，点击关闭",
@@ -260,9 +262,9 @@
             0
         ],
         "next": [
-            "StartGame_Banner2",
-            "StartGame_BackMapPage"
-        ]
+            "StartGame_Banner2"
+        ],
+        "on_error": "StartGame_BackMapPage"
     },
     "StartGame_Banner2": {
         "doc": "公告弹窗",

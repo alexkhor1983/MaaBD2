@@ -139,21 +139,20 @@
         "action": "Click",
         "post_delay": 5000,
         "next": [
-            "Gacha_Test",
+            "Gacha_5X",
             "Gacha_GachaResultBack"
         ]
     },
-    "Gacha_Test": {
-        "doc": "跳过抽卡等待  测试",
-        "recognition": "TemplateMatch",
+    "Gacha_5X": {
+        "doc": "五星卡",
+        "recognition": "OCR",
         "roi": [
-            627,
-            639,
-            26,
-            28
+            596,
+            506,
+            90,
+            40
         ],
-        "template": "equip2.png",
-        "threshold": 0.95,
+        "expected": "艾莉诺",
         "action": "Click",
         "target": [
             1157,

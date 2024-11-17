@@ -142,20 +142,14 @@
         "doc": "快速狩猎界面，点击狩猎",
         "recognition": "OCR",
         "roi": [
-            582,
-            159,
-            113,
-            42
+            643,
+            528,
+            59,
+            78
         ],
-        "expected": "快速狩猎",
+        "expected": "狩猎",
         "action": "Click",
         "post_delay": 5000,
-        "target": [
-            700,
-            545,
-            0,
-            0
-        ],
         "next": [
             "Battle_FastBattleReward2"
         ]

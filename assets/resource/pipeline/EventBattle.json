@@ -244,6 +244,48 @@
             0
         ],
         "post_delay": 1000,
-        "next": []
+        "next": [
+            "Event_LeaveEvent"
+        ]
+    },
+    "Event_LeaveEvent": {
+        "doc": "普通战斗-离开活动页",
+        "recognition": "OCR",
+        "roi": [
+            283,
+            621,
+            73,
+            60
+        ],
+        "expected": "普通战斗",
+        "action": "Click",
+        "target": [
+            130,
+            46,
+            0,
+            0
+        ],
+        "post_delay": 1000,
+        "next": [
+            "Even_BackMapPage"
+        ]
+    },
+    "Even_BackMapPage": {
+        "doc": "识别左下抽抽乐-返回地图页",
+        "recognition": "OCR",
+        "roi": [
+            98,
+            656,
+            66,
+            32
+        ],
+        "expected": "抽抽乐",
+        "action": "Click",
+        "target": [
+            135,
+            40,
+            0,
+            0
+        ]
     }
 }
