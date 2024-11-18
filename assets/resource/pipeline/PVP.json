@@ -75,7 +75,8 @@
         "action": "Click",
         "next": [
             "PVP_PVPStart",
-            "PVP_PVPMes"
+            "PVP_PVPMes",
+            "PVP_PVPMes2"
         ]
     },
     "PVP_PVPMes": {
@@ -90,6 +91,22 @@
         "expected": "确认",
         "action": "Click",
         "next": [
+            "PVP_PVPStart"
+        ]
+    },
+    "PVP_PVPMes2": {
+        "doc": "升降级点击画面返回",
+        "recognition": "OCR",
+        "roi": [
+            815,
+            582,
+            144,
+            32
+        ],
+        "expected": "点击画面即可返回",
+        "action": "Click",
+        "next": [
+            "PVP_PVPMes",
             "PVP_PVPStart"
         ]
     },
@@ -239,7 +256,8 @@
         ],
         "post_delay": 2000,
         "next": [
-            "PVP_BattleLeave"
+            "PVP_BattleLeave",
+            "PVP_BattleFaildLeave"
         ]
     },
     "PVP_BattleLeave": {
@@ -250,6 +268,23 @@
             653,
             50,
             34
+        ],
+        "expected": "离开",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "PVP_PVPMes_Back",
+            "PVP_BackPVEPage"
+        ]
+    },
+    "PVP_BattleFaildLeave": {
+        "doc": "识别离开",
+        "recognition": "OCR",
+        "roi": [
+            698,
+            635,
+            51,
+            32
         ],
         "expected": "离开",
         "action": "Click",

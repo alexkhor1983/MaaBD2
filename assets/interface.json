@@ -24,7 +24,10 @@
         },
         {
             "name": "地图扫荡",
-            "entry": "Battle_StartGame_HomePage"
+            "entry": "Battle_StartGame_HomePage",
+            "option": [
+                "属性石头"
+            ]
         },
         {
             "name": "装备制作强化分解炼制",
@@ -55,5 +58,75 @@
             "entry": "Event_HomePage"
         }
     ],
-    "option": {}
+    "option": {
+        "属性石头": {
+            "cases": [
+                {
+                    "name": "火",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch_StoneSelect": {
+                            "target": [
+                                230,
+                                120,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "水",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch_StoneSelect": {
+                            "target": [
+                                230,
+                                175,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "风",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch_StoneSelect": {
+                            "target": [
+                                230,
+                                230,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "光",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch_StoneSelect": {
+                            "target": [
+                                230,
+                                290,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "暗",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch_StoneSelect": {
+                            "target": [
+                                230,
+                                350,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }

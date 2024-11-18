@@ -213,9 +213,9 @@
         ],
         "next": [
             "StartGame_DaliyBanner",
-            "StartGame_Banner",
-            "StartGame_BackMapPage"
-        ]
+            "StartGame_Banner"
+        ],
+        "on_error": "StartGame_BackMapPage"
     },
     "StartGame_DaliyBanner": {
         "doc": "每日签到第一日签到识别",
