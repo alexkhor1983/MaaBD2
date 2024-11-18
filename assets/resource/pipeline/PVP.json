@@ -151,7 +151,6 @@
         ],
         "post_delay": 1000,
         "next": [
-            "PVP_AutoBattleStart",
             "PVP_AutoBattleButton",
             "PVP_AutoBattleButton2",
             "PVP_AutoBattleMAX"

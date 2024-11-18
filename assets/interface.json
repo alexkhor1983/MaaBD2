@@ -39,7 +39,10 @@
         },
         {
             "name": "竞技场",
-            "entry": "PVP_HomePage"
+            "entry": "PVP_HomePage",
+            "option": [
+                "战斗次数"
+            ]
         },
         {
             "name": "领取日常奖励",
@@ -123,6 +126,26 @@
                                 0,
                                 0
                             ]
+                        }
+                    }
+                }
+            ]
+        },
+        "战斗次数": {
+            "cases": [
+                {
+                    "name": "战斗一次",
+                    "pipeline_override": {
+                        "PVP_AutoBattleMAX": {
+                            "enabled": false
+                        }
+                    }
+                },
+                {
+                    "name": "使用全部",
+                    "pipeline_override": {
+                        "PVP_AutoBattleMAX": {
+                            "enabled": true
                         }
                     }
                 }
