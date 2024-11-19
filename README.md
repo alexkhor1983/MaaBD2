@@ -31,12 +31,15 @@
  > 装备请保留并锁定一件 N +9的装备用来精炼
 >
 > PVP战斗和分解装备的设置如图，请手动设置一次即可
+>
+> 人物技能请按图中设置
 
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/1.png"  width="210px"/>
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/2.png"  width="210px"/>
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/3.png"  width="210px"/>
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/4.png"  width="210px"/>
  > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/5.png"  width="210px"/>
+ > <img alt="LOGO" src="https://github.com/JZPPP/MaaBD2/blob/main/6.png"  width="210px"/>
  
 
 ## 功能一览
