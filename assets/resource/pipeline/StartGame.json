@@ -136,6 +136,7 @@
         "action": "Click",
         "post_delay": 10000,
         "next": [
+            "StartGame_TouchStart",
             "StartGame_MapPage",
             "StartGame_PVPSet",
             "StartGame_SeasonSet"
@@ -237,6 +238,7 @@
             0
         ],
         "next": [
+            "StartGame_DaliyBanner",
             "StartGame_Banner",
             "StartGame_Banner2"
         ],

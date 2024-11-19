@@ -137,7 +137,12 @@
                     "name": "战斗一次",
                     "pipeline_override": {
                         "PVP_AutoBattleMAX": {
-                            "enabled": false
+                            "target": [
+                                425,
+                                435,
+                                0,
+                                0
+                            ]
                         }
                     }
                 },
@@ -145,7 +150,12 @@
                     "name": "使用全部",
                     "pipeline_override": {
                         "PVP_AutoBattleMAX": {
-                            "enabled": true
+                            "target": [
+                                865,
+                                435,
+                                0,
+                                0
+                            ]
                         }
                     }
                 }

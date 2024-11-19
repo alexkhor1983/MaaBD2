@@ -62,15 +62,21 @@
     },
     "GetReward_UnionGUI": {
         "doc": "工会签到",
-        "recognition": "OCR",
+        "recognition": "TemplateMatch",
         "roi": [
-            552,
-            506,
-            158,
-            35
+            622,
+            300,
+            34,
+            32
         ],
-        "expected": "奖励已发放至信箱",
+        "template": "UnionReward.png",
         "action": "Click",
+        "target": [
+            625,
+            525,
+            0,
+            0
+        ],
         "next": [
             "GetReward_UnionBack"
         ]

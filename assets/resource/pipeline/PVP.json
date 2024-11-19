@@ -189,7 +189,7 @@
         ]
     },
     "PVP_AutoBattleMAX": {
-        "doc": "点击MAX",
+        "doc": "点击MAX Mini",
         "recognition": "OCR",
         "roi": [
             826,
@@ -199,6 +199,12 @@
         ],
         "expected": "MAX",
         "action": "Click",
+        "target": [
+            425,
+            435,
+            0,
+            0
+        ],
         "post_delay": 1000,
         "next": [
             "PVP_AutoBattleStart"
