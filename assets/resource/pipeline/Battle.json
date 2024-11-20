@@ -181,6 +181,7 @@
         ],
         "template": "DoubleReward.png",
         "action": "Click",
+        "post_delay": 1000,
         "target": [
             135,
             350,
@@ -202,6 +203,7 @@
         ],
         "expected": "火之洞穴",
         "action": "Click",
+        "post_delay": 1000,
         "target": [
             230,
             350,
@@ -223,6 +225,7 @@
         ],
         "expected": "快速狩猎",
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "Battle_FastBattleMAXTouch2"
         ]
@@ -237,6 +240,7 @@
             36
         ],
         "expected": "MAX",
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "Battle_FastBattle3"
