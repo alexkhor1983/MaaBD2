@@ -95,7 +95,7 @@
         "next": [
             "Collect_PetTask"
         ],
-        "on_error": "Collect_HomePageFin"
+        "on_error": "Collect_FinBackMapPage"
     },
     "Collect_PetTask": {
         "doc": "宠物派遣",
@@ -110,10 +110,10 @@
         "post_delay": 5000,
         "template": "PetTask.png",
         "next": [
-            "Collect_HomePageFin"
+            "Collect_FinBackMapPage"
         ]
     },
-    "Collect_HomePageFin": {
+    "Collect_FinBackMapPage": {
         "doc": "识别右下图钉-章节主页",
         "recognition": "TemplateMatch",
         "roi": [
@@ -125,6 +125,8 @@
         "template": [
             "pin.png"
         ],
-        "next": []
+        "next": [
+            "Battle_StartGame_HomePage"
+        ]
     }
 }

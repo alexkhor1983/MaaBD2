@@ -543,10 +543,10 @@
             0
         ],
         "next": [
-            "Equip_FinHomePage"
+            "Equip_FinBackMapPage"
         ]
     },
-    "Equip_FinHomePage": {
+    "Equip_FinBackMapPage": {
         "doc": "识别右下图钉-章节主页",
         "recognition": "TemplateMatch",
         "roi": [
@@ -558,6 +558,8 @@
         "template": [
             "pin.png"
         ],
-        "next": []
+        "next": [
+            "Gacha_BackHomePage"
+        ]
     }
 }

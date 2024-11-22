@@ -28,6 +28,7 @@
             "pin.png"
         ],
         "action": "Click",
+        "post_delay": 1000,
         "target": [
             1186,
             46,
@@ -39,7 +40,7 @@
         ]
     },
     "Mail_EnterMail": {
-        "doc": "识别左下抽抽乐-点击通行证",
+        "doc": "识别左下抽抽乐-点击邮件",
         "recognition": "OCR",
         "roi": [
             98,
@@ -49,6 +50,7 @@
         ],
         "expected": "抽抽乐",
         "action": "Click",
+        "post_delay": 1000,
         "target": [
             1030,
             45,
@@ -69,6 +71,7 @@
             35
         ],
         "expected": "全部领取",
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "Mail_GetAllBack"
@@ -85,6 +88,7 @@
         ],
         "expected": "点击画面即可返回",
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "Mail_BackHomePage2"
         ]
@@ -126,6 +130,25 @@
             40,
             0,
             0
+        ],
+        "next": [
+            "Mail_FinBackMapPage"
+        ]
+    },
+    "Mail_FinBackMapPage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "Event_HomePage"
         ]
     }
 }

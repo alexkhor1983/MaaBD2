@@ -3,7 +3,8 @@
         "doc": "启动游戏",
         "action": "StartApp",
         "package": "com.neowizgames.game.browndust2",
-        "post_delay": 3000,
+        "post_delay": 5000,
+        "pre_wait_freezes": 500,
         "next": [
             "StartGame_Logo"
         ]
@@ -331,10 +332,10 @@
             0
         ],
         "next": [
-            "StartGame_FinMapPage"
+            "StartGame_FinBackMapPage"
         ]
     },
-    "StartGame_FinMapPage": {
+    "StartGame_FinBackMapPage": {
         "doc": "识别右下图钉-章节主页",
         "recognition": "TemplateMatch",
         "roi": [
@@ -345,6 +346,9 @@
         ],
         "template": [
             "pin.png"
+        ],
+        "next": [
+            "Collect_StartGame_HomePage"
         ]
     }
 }

@@ -398,10 +398,10 @@
         "action": "Click",
         "post_delay": 5000,
         "next": [
-            "PVP_HomePageFin"
+            "PVP_FinBackMapPage"
         ]
     },
-    "PVP_HomePageFin": {
+    "PVP_FinBackMapPage": {
         "doc": "识别右下图钉-章节主页",
         "recognition": "TemplateMatch",
         "roi": [
@@ -413,6 +413,8 @@
         "template": [
             "pin.png"
         ],
-        "next": []
+        "next": [
+            "GetReward_HomePage"
+        ]
     }
 }

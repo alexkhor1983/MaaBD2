@@ -49,6 +49,7 @@
         ],
         "expected": "抽抽乐",
         "action": "Click",
+        "post_delay": 1000,
         "target": [
             1150,
             245,
@@ -71,6 +72,8 @@
         "template": [
             "Pass.png"
         ],
+        "threshold": 0.95,
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "Pass_SelectPassTask"
@@ -89,6 +92,7 @@
             "Pass.png"
         ],
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "Pass_GetAll"
         ]
@@ -103,6 +107,7 @@
             36
         ],
         "expected": "全部获得",
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "Pass_GetAllBack"
@@ -118,6 +123,7 @@
             36
         ],
         "expected": "点击画面即可返回",
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "Pass_SelectPassLev",
@@ -137,6 +143,7 @@
             "Pass.png"
         ],
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "Pass_LevGetAll"
         ]
@@ -151,6 +158,7 @@
             36
         ],
         "expected": "全部获得",
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "Pass_SelectPass",
@@ -194,6 +202,25 @@
             40,
             0,
             0
+        ],
+        "next": [
+            "Pass_FinBackMapPage"
+        ]
+    },
+    "Pass_FinBackMapPage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "Mail_HomePage"
         ]
     }
 }

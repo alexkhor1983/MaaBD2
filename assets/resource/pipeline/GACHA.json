@@ -224,6 +224,25 @@
             40,
             0,
             0
+        ],
+        "next": [
+            "Gacha_FinBackMapPage"
+        ]
+    },
+    "Gacha_FinBackMapPage": {
+        "doc": "识别右下图钉-章节主页",
+        "recognition": "TemplateMatch",
+        "roi": [
+            1122,
+            646,
+            40,
+            38
+        ],
+        "template": [
+            "pin.png"
+        ],
+        "next": [
+            "PVP_HomePage"
         ]
     }
 }
