@@ -145,12 +145,12 @@
         "doc": "快速战斗-返回",
         "recognition": "OCR",
         "roi": [
-            856,
-            627,
-            85,
-            41
+            668,
+            626,
+            92,
+            43
         ],
-        "expected": "快速战斗",
+        "expected": "伙伴",
         "action": "Click",
         "target": [
             130,

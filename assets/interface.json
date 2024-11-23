@@ -15,11 +15,15 @@
     ],
     "task": [
         {
-            "name": "启动游戏",
+            "name": "测试模式",
             "entry": "StartGame_Start",
             "option": [
                 "测试模式"
             ]
+        },
+        {
+            "name": "启动游戏",
+            "entry": "StartGame_Start",
         },
         {
             "name": "地图采集",

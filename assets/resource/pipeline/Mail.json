@@ -144,6 +144,7 @@
             40,
             38
         ],
+        "enabled": true,
         "template": [
             "pin.png"
         ],
