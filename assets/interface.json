@@ -23,7 +23,7 @@
         },
         {
             "name": "启动游戏",
-            "entry": "StartGame_Start",
+            "entry": "StartGame_Start"
         },
         {
             "name": "地图采集",
