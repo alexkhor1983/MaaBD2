@@ -15,15 +15,11 @@
     ],
     "task": [
         {
-            "name": "测试模式",
+            "name": "启动游戏",
             "entry": "StartGame_Start",
             "option": [
                 "测试模式"
             ]
-        },
-        {
-            "name": "启动游戏",
-            "entry": "StartGame_Start"
         },
         {
             "name": "地图采集",
@@ -174,28 +170,28 @@
                     "name": "关闭",
                     "pipeline_override": {
                         "Battle_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "Collect_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "Equip_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "GACHA_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "GetReward_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "Mail_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "Pass_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "PVP_FinBackMapPage": {
-                            "enabled": false
+                            "next": []
                         },
                         "Start_FinBackMapPage": {
                             "enabled": false
