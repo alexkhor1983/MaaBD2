@@ -1,4 +1,8 @@
 {
+    "name": "MAABD2",
+    "url": "https://github.com/JZPPP/MaaBD2",
+    "default_controller": "adb",
+    "lock_controller": true,
     "controller": [
         {
             "name": "安卓端",
@@ -199,8 +203,7 @@
                     }
                 },
                 {
-                    "name": "开启",
-                    "pipeline_override": {}
+                    "name": "开启"
                 }
             ]
         }
