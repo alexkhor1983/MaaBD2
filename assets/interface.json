@@ -199,7 +199,8 @@
                     }
                 },
                 {
-                    "name": "开启"
+                    "name": "开启",
+                    "pipeline_override": {}
                 }
             ]
         }
