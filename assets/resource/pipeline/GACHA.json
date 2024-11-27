@@ -241,8 +241,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "PVP_HomePage"
-        ]
+        "next": []
     }
 }

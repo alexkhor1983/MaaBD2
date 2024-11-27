@@ -219,8 +219,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Mail_HomePage"
-        ]
+        "next": []
     }
 }

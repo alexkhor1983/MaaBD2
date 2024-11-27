@@ -347,8 +347,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Collect_StartGame_HomePage"
-        ]
+        "next": []
     }
 }

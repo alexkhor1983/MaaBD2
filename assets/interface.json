@@ -171,36 +171,58 @@
                     "pipeline_override": {
                         "Battle_FinBackMapPage": {
                             "next": []
-                        },
-                        "Collect_FinBackMapPage": {
-                            "next": []
-                        },
-                        "Equip_FinBackMapPage": {
-                            "next": []
-                        },
-                        "GACHA_FinBackMapPage": {
-                            "next": []
-                        },
-                        "GetReward_FinBackMapPage": {
-                            "next": []
-                        },
-                        "Mail_FinBackMapPage": {
-                            "next": []
-                        },
-                        "Pass_FinBackMapPage": {
-                            "next": []
-                        },
-                        "PVP_FinBackMapPage": {
-                            "next": []
-                        },
-                        "Start_FinBackMapPage": {
-                            "next": []
                         }
                     }
                 },
                 {
-                    "name": "开启",
-                    "pipeline_override": {}
+                    "name": "关闭",
+                    "pipeline_override": {
+                        "Battle_FinBackMapPage": {
+                            "next": [
+                                "Equip_HomePage"
+                            ]
+                        },
+                        "Collect_FinBackMapPage": {
+                            "next": [
+                                "Battle_StartGame_HomePage"
+                            ]
+                        },
+                        "Equip_FinBackMapPage": {
+                            "next": [
+                                "Gacha_BackHomePage"
+                            ]
+                        },
+                        "GACHA_FinBackMapPage": {
+                            "next": [
+                                "PVP_HomePage"
+                            ]
+                        },
+                        "GetReward_FinBackMapPage": {
+                            "next": [
+                                "Pass_HomePage"
+                            ]
+                        },
+                        "Mail_FinBackMapPage": {
+                            "next": [
+                                "Event_HomePage"
+                            ]
+                        },
+                        "Pass_FinBackMapPage": {
+                            "next": [
+                                "Mail_HomePage"
+                            ]
+                        },
+                        "PVP_FinBackMapPage": {
+                            "next": [
+                                "GetReward_HomePage"
+                            ]
+                        },
+                        "Start_FinBackMapPage": {
+                            "next": [
+                                "Collect_StartGame_HomePage"
+                            ]
+                        }
+                    }
                 }
             ]
         }

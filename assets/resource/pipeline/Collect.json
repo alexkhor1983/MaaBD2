@@ -125,8 +125,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Battle_StartGame_HomePage"
-        ]
+        "next": []
     }
 }

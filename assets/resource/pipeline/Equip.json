@@ -558,8 +558,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Gacha_BackHomePage"
-        ]
+        "next": []
     }
 }

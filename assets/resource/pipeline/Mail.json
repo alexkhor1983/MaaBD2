@@ -147,8 +147,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Event_HomePage"
-        ]
+        "next": []
     }
 }

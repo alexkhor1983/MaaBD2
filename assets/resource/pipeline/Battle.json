@@ -317,8 +317,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Equip_HomePage"
-        ]
+        "next": []
     }
 }

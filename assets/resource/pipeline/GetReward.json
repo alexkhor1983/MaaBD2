@@ -219,8 +219,6 @@
         "template": [
             "pin.png"
         ],
-        "next": [
-            "Pass_HomePage"
-        ]
+        "next": []
     }
 }
