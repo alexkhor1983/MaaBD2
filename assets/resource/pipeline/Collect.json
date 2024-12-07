@@ -11,6 +11,23 @@
         "template": [
             "pin.png"
         ],
+        "post_delay": 5000,
+        "next": [
+            "Collect_PerPetTask"
+        ]
+    },
+    "Collect_PerPetTask": {
+        "doc": "宠物派遣",
+        "recognition": "TemplateMatch",
+        "roi": [
+            866,
+            550,
+            28,
+            28
+        ],
+        "action": "Click",
+        "post_delay": 5000,
+        "template": "PetTask.png",
         "next": [
             "Collect_HomePage"
         ]
