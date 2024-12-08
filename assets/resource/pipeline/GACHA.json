@@ -140,6 +140,7 @@
         "post_delay": 5000,
         "next": [
             "Gacha_5X",
+            "Gacha_5X2",
             "Gacha_GachaResultBack"
         ]
     },
@@ -153,6 +154,27 @@
             40
         ],
         "expected": "艾莉诺",
+        "action": "Click",
+        "target": [
+            1157,
+            50,
+            0,
+            0
+        ],
+        "next": [
+            "Gacha_GachaResultBack"
+        ]
+    },
+    "Gacha_5X2": {
+        "doc": "五星卡2",
+        "recognition": "OCR",
+        "roi": [
+            592,
+            506,
+            95,
+            39
+        ],
+        "expected": "埃伊",
         "action": "Click",
         "target": [
             1157,
