@@ -71,7 +71,36 @@
         "expected": "查看概率",
         "next": [
             "Gacha_FindFreeGacha",
+            "Gacha_Slip",
             "Gacha_FinGacha"
+        ]
+    },
+    "Gacha_Slip": {
+        "doc": "下滑寻找免费抽卡",
+        "recognition": "TemplateMatch",
+        "roi": [
+            266,
+            475,
+            40,
+            30
+        ],
+        "template": "FreeGacha.png",
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            210,
+            490,
+            0,
+            0
+        ],
+        "end": [
+            210,
+            400,
+            0,
+            0
+        ],
+        "next": [
+            "Gacha_FindFreeGacha"
         ]
     },
     "Gacha_FindFreeGacha": {
@@ -95,7 +124,8 @@
         "next": [
             "Gacha_TouchGacha",
             "Gacha_FindFreeGacha"
-        ]
+        ],
+        "on_error": "Gacha_FinGacha"
     },
     "Gacha_TouchGacha": {
         "doc": "点击右下抽卡",

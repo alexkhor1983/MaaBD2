@@ -77,6 +77,7 @@
             0,
             0
         ],
+        "post_delay": 3000,
         "next": [
             "GetReward_UnionBack"
         ]
@@ -90,6 +91,7 @@
             65,
             41
         ],
+        "post_delay": 3000,
         "expected": "公会",
         "action": "Click",
         "target": [
@@ -111,6 +113,7 @@
             45,
             32
         ],
+        "post_delay": 1000,
         "expected": "任务",
         "action": "Click",
         "next": [
