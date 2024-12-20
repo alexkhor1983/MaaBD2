@@ -16,10 +16,7 @@
     "task": [
         {
             "name": "启动游戏",
-            "entry": "StartGame_Start",
-            "option": [
-                "测试模式"
-            ]
+            "entry": "StartGame_Start"
         },
         {
             "name": "地图采集",
@@ -29,7 +26,8 @@
             "name": "地图扫荡",
             "entry": "Battle_StartGame_HomePage",
             "option": [
-                "属性石头"
+                "属性石头",
+                "双倍图战斗次数"
             ]
         },
         {
@@ -150,7 +148,7 @@
                     }
                 },
                 {
-                    "name": "使用全部",
+                    "name": "Max",
                     "pipeline_override": {
                         "PVP_AutoBattleMAX": {
                             "target": [
@@ -158,6 +156,54 @@
                                 435,
                                 0,
                                 0
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "双倍图战斗次数": {
+            "cases": [
+                {
+                    "name": "战斗一次",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch2": {
+                            "next": [
+                                "Battle_FastBattle2"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Max",
+                    "pipeline_override": {
+                        "Battle_FastBattleTouch2": {
+                            "next": [
+                                "Battle_FastBattleMAXTouch"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "活动图小游戏扫荡": {
+            "cases": [
+                {
+                    "name": "开启",
+                    "pipeline_override": {
+                        "Event_NormalBattleBack2": {
+                            "next": [
+                                "Event_Explore"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "关闭",
+                    "pipeline_override": {
+                        "Event_NormalBattleBack2": {
+                            "next": [
+                                "Event_LeaveEvent"
                             ]
                         }
                     }

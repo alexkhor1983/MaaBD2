@@ -70,9 +70,9 @@
             300
         ],
         "template": [
-            "Pass.png"
+            "pass1.png"
         ],
-        "threshold": 0.95,
+        "threshold": 0.90,
         "post_delay": 1000,
         "action": "Click",
         "next": [

@@ -39,23 +39,17 @@
         ]
     },
     "GetReward_EnterUnion": {
-        "doc": "识别左下抽抽乐-点击工会",
+        "doc": "点击工会",
         "recognition": "OCR",
         "roi": [
-            98,
-            656,
-            66,
-            32
+            267,
+            132,
+            86,
+            46
         ],
-        "expected": "抽抽乐",
+        "expected": "工会",
         "action": "Click",
         "post_delay": 3000,
-        "target": [
-            220,
-            205,
-            0,
-            0
-        ],
         "next": [
             "GetReward_UnionGUI"
         ]
@@ -171,6 +165,54 @@
             0,
             0
         ],
+        "next": [
+            "GetReward_BusinReward"
+        ]
+    },
+    "GetReward_BusinReward": {
+        "doc": "识别点击餐馆",
+        "recognition": "OCR",
+        "roi": [
+            76,
+            181,
+            112,
+            93
+        ],
+        "post_delay": 1000,
+        "expected": "餐馆",
+        "action": "Click",
+        "next": [
+            "GetReward_GetBusinReward"
+        ]
+    },
+    "GetReward_GetBusinReward": {
+        "doc": "点击结算",
+        "recognition": "OCR",
+        "roi": [
+            604,
+            530,
+            67,
+            38
+        ],
+        "post_delay": 1000,
+        "expected": "结算",
+        "action": "Click",
+        "next": [
+            "GetReward_GetBusinRewardBack"
+        ]
+    },
+    "GetReward_GetBusinRewardBack": {
+        "doc": "点击领取全部返回",
+        "recognition": "OCR",
+        "roi": [
+            552,
+            627,
+            165,
+            42
+        ],
+        "expected": "点击画面",
+        "action": "Click",
+        "post_delay": 3000,
         "next": [
             "GetReward_FinGetReward"
         ]
