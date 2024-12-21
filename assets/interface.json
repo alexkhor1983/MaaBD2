@@ -42,7 +42,7 @@
             "name": "竞技场",
             "entry": "PVP_HomePage",
             "option": [
-                "战斗次数"
+                "竞技场战斗次数"
             ]
         },
         {
@@ -59,7 +59,10 @@
         },
         {
             "name": "活动图扫荡",
-            "entry": "Event_HomePage"
+            "entry": "Event_HomePage",
+            "option": [
+                "活动图小游戏扫荡"
+            ]
         }
     ],
     "option": {
@@ -132,7 +135,7 @@
                 }
             ]
         },
-        "战斗次数": {
+        "竞技场战斗次数": {
             "cases": [
                 {
                     "name": "战斗一次",
