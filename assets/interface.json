@@ -47,7 +47,10 @@
         },
         {
             "name": "领取日常奖励",
-            "entry": "GetReward_HomePage"
+            "entry": "GetReward_HomePage",
+            "option": [
+                "工会奖励"
+            ]
         },
         {
             "name": "领取通行证奖励",
@@ -207,6 +210,30 @@
                         "Event_NormalBattleBack2": {
                             "next": [
                                 "Event_LeaveEvent"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "工会奖励": {
+            "cases": [
+                {
+                    "name": "开启",
+                    "pipeline_override": {
+                        "GetReward_HomePage": {
+                            "next": [
+                                "GetReward_BackHomePage"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "关闭",
+                    "pipeline_override": {
+                        "GetReward_HomePage": {
+                            "next": [
+                                "GetReward_DailyReward"
                             ]
                         }
                     }

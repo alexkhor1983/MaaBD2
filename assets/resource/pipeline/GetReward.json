@@ -42,14 +42,13 @@
         "doc": "点击工会",
         "recognition": "OCR",
         "roi": [
-            267,
-            132,
-            86,
-            46
+            279,
+            140,
+            60,
+            35
         ],
+        "post_delay": 1000,
         "expected": "工会",
-        "action": "Click",
-        "post_delay": 3000,
         "next": [
             "GetReward_UnionGUI"
         ]
