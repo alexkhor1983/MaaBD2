@@ -176,6 +176,7 @@
         ],
         "expected": "通行证",
         "action": "Click",
+        "post_delay": 1000,
         "target": [
             135,
             40,
