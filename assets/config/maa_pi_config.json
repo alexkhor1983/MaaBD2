@@ -19,7 +19,8 @@
     "task": [
         {
             "name": "开始游戏",
-            "option": []
+            "option": [],
+            "__vscKey": "93e47227-4498-4c9f-bca4-ca397553a0b1"
         }
     ]
 }

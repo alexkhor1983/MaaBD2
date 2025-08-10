@@ -2,7 +2,7 @@
     "StartGame_Start": {
         "doc": "启动游戏",
         "action": "StartApp",
-        "package": "com.neowizgames.game.browndust2",
+        "package": "com.madhead.tos.zh",
         "post_delay": 5000,
         "pre_wait_freezes": 500,
         "next": [
